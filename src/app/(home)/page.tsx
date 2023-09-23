@@ -1,5 +1,6 @@
 import Credits from "@/components/common/Credits";
 import Profile from "@/components/common/Profile";
+import SocialLinks from "@/components/common/SocialLinks";
 import Button from "@/components/ui/Button";
 
 const Home = () => {
@@ -17,13 +18,35 @@ const Home = () => {
           </p>
         }
       />
-      <div className="buttons-list">
-        <Button icon="linkedin">LinkedIn</Button>
-        <Button icon="instagram">Instagram</Button>
-        <Button icon="github">GitHub</Button>
-        <Button icon="whatsapp">WhatsApp</Button>
-        <Button icon="email">E-mail</Button>
-      </div>
+      <SocialLinks
+        links={[
+          {
+            icon: "linkedin",
+            url: "https://www.linkedin.com/in/adrknapp/",
+            name: "LinkedIn",
+          },
+          {
+            icon: "instagram",
+            url: "https://www.instagram.com/adrknapp/?hl=pt-br",
+            name: "Instagram",
+          },
+          {
+            icon: "github",
+            url: "https://github.com/AdrianKnapp",
+            name: "GitHub",
+          },
+          {
+            icon: "whatsapp",
+            url: "https://wa.me/5553984733103",
+            name: "GitHub",
+          },
+          {
+            icon: "email",
+            url: "mailto:adrknapp@gmail.com",
+            name: "Email",
+          },
+        ]}
+      />
       <Credits />
     </>
   );

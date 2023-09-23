@@ -14,7 +14,7 @@ const availableIcons = {
   email: <TbMessagePlus />,
 };
 
-type ButtonProps = {
+export type ButtonProps = {
   children: JSX.Element | string;
   icon?: keyof typeof availableIcons;
 };
