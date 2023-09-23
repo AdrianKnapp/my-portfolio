@@ -2,6 +2,7 @@ import Credits from "@/components/common/Credits";
 import Profile from "@/components/common/Profile";
 import SocialLinks from "@/components/common/SocialLinks";
 import Button from "@/components/ui/Button";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -11,10 +12,10 @@ const Home = () => {
         name="Adrian Knapp"
         description={
           <p>
-            I&apos;m a software engineer with a passion for building things.
-            I&apos;m currently working at{" "}
-            <a href="https://www.athenahealth.com/">Trivod</a> as a Senior
-            Software Engineer.
+            Senior Front-end Software Engineer at{" "}
+            <Link href="https://www.trivod.com/" target="_blank">
+              Trivod
+            </Link>
           </p>
         }
       />
