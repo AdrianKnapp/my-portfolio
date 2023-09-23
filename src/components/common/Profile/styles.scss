@@ -1,0 +1,25 @@
+[data-cid="profile"] {
+  @apply flex flex-col gap-2 items-center justify-center mb-8;
+}
+
+.profile {
+  &-image {
+    @apply w-40 h-40 rounded-full overflow-hidden;
+  
+    img {
+      @apply w-full h-full object-cover;
+    }
+  }
+
+  &-name {
+    @apply text-lg font-semibold;
+  }
+
+  &-description {
+    @apply text-sm text-black-light text-center;
+
+    a {
+      @apply text-blue-600 underline;
+    }
+  }
+}
