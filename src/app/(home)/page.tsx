@@ -22,6 +22,7 @@ const Home = () => {
         <Button icon="instagram">Instagram</Button>
         <Button icon="github">GitHub</Button>
         <Button icon="whatsapp">WhatsApp</Button>
+        <Button icon="email">E-mail</Button>
       </div>
       <Credits />
     </>

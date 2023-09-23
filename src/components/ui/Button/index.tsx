@@ -4,12 +4,14 @@ import {
   LiaGithub,
   LiaWhatsapp,
 } from "react-icons/lia";
+import { TbMessagePlus } from "react-icons/tb";
 
 const availableIcons = {
   linkedin: <LiaLinkedin />,
   instagram: <LiaInstagram />,
   github: <LiaGithub />,
   whatsapp: <LiaWhatsapp />,
+  email: <TbMessagePlus />,
 };
 
 type ButtonProps = {

@@ -12,14 +12,14 @@
   }
 
   &-name {
-    @apply text-lg font-semibold;
+    @apply text-lg font-semibold text-black-dark;
   }
 
   &-description {
-    @apply text-sm text-black-light text-center;
+    @apply text-sm text-black-light text-center font-normal;
 
     a {
-      @apply text-blue-600 underline;
+      @apply text-black-darker underline;
     }
   }
 }
