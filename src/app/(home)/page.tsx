@@ -12,7 +12,7 @@ const Home = () => {
         name="Adrian Knapp"
         description={
           <p>
-            Senior Front-end Software Engineer at{" "}
+            Senior Software Engineer at{" "}
             <Link href="https://www.trivod.com/" target="_blank">
               Trivod
             </Link>
@@ -39,12 +39,12 @@ const Home = () => {
           {
             icon: "whatsapp",
             url: "https://wa.me/5553984733103",
-            name: "GitHub",
+            name: "WhatsApp",
           },
           {
             icon: "email",
             url: "mailto:adrknapp@gmail.com",
-            name: "Email",
+            name: "E-mail",
           },
         ]}
       />
