@@ -14,7 +14,7 @@ const Home = () => {
           <p>
             Senior Software Engineer at{" "}
             <Link href="https://tractian.com/?gad_source=1" target="_blank">
-              Trivod
+              Tractian
             </Link>
           </p>
         }
