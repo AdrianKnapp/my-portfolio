@@ -10,10 +10,10 @@ const Profile = ({ imageUrl, name, description }: ProfileProps) => {
   return (
     <div data-cid="profile">
       <div className="profile-image">
-        <Image src={imageUrl} alt="Profile" width={200} height={200} />
+        <Image src={imageUrl} alt="Adrian Knapp" width={200} height={200} />
       </div>
-      <div className="profile-name">{name}</div>
-      <div className="profile-description">{description}</div>
+      <h1 className="profile-name">{name}</h1>
+      <h2 className="profile-description">{description}</h2>
     </div>
   );
 };

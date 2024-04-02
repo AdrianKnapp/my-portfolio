@@ -11,12 +11,12 @@ const Home = () => {
         imageUrl="https://avatars.githubusercontent.com/u/71047946?v=4"
         name="Adrian Knapp"
         description={
-          <p>
+          <>
             Senior Software Engineer at{" "}
             <Link href="https://tractian.com/?gad_source=1" target="_blank">
               Tractian
             </Link>
-          </p>
+          </>
         }
       />
       <SocialLinks
@@ -48,7 +48,7 @@ const Home = () => {
           },
         ]}
       />
-      <Credits />
+      {/* <Credits /> */}
     </>
   );
 };
