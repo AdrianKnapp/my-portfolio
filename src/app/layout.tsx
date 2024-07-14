@@ -1,3 +1,4 @@
+import { GTMInjection } from "@/components/common/GTMInjection";
 import "../styles/globals.scss";
 import { Poppins } from "next/font/google";
 
@@ -13,7 +14,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={poppins.className}>{children}</body>
+      <head>
+        <GTMInjection />
+      </head>
+      <body className={poppins.className}>
+        <noscript>
+          <iframe
+            className="hidden"
+            title="gtm"
+            height="0"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WZ9CXZN5"
+            width="0"
+          />
+        </noscript>
+        {children}
+      </body>
     </html>
   );
 }

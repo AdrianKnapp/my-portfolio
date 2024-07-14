@@ -1,7 +1,5 @@
-import Credits from "@/components/common/Credits";
 import Profile from "@/components/common/Profile";
 import SocialLinks from "@/components/common/SocialLinks";
-import Button from "@/components/ui/Button";
 import Link from "next/link";
 
 const Home = () => {
