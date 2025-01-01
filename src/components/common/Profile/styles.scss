@@ -1,11 +1,11 @@
 [data-cid="profile"] {
-  @apply flex flex-col gap-2 items-center justify-center mb-8;
+  @apply flex flex-col gap-1 items-center justify-center;
 }
 
 .profile {
   &-image {
     @apply w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden;
-  
+
     img {
       @apply w-full h-full object-cover;
     }
@@ -16,10 +16,10 @@
   }
 
   &-description {
-    @apply text-sm text-black-light text-center font-normal;
+    @apply text-sm text-black-light text-center font-light;
 
     a {
-      @apply text-black-darker underline;
+      @apply underline;
     }
   }
 }
