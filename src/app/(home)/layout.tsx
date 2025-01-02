@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Links | Adrian Knapp",
+  title: "Find Me | Adrian Knapp",
   description:
-    "Access and see more about the senior software engineer Adrian Knapp.",
+    "With over 6 years of experience in software development, I create solutions that combine performance, scalability, and simplicity.",
 };
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
