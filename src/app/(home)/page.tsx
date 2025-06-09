@@ -11,8 +11,8 @@ const Home = () => {
         description={
           <>
             Senior Software Engineer at{" "}
-            <Link href="https://tractian.com/?gad_source=1" target="_blank">
-              Tractian
+            <Link href="https://wellhub.com/" target="_blank">
+              Wellhub (Gympass)
             </Link>
           </>
         }
