@@ -18,9 +18,9 @@ const Home = () => {
         }
       />
       <div className="flex flex-col gap-8">
-        <p className="text-base text-black-default  font-light">
-          With over 6 years of experience in software development, I create
-          solutions that combine performance, scalability, and simplicity.
+        <p className="text-base text-black-default text-center font-light">
+          For over six years, creating solutions that combine performance,
+          scalability, and simplicity.
         </p>
         <SocialLinks
           links={[
@@ -40,14 +40,14 @@ const Home = () => {
               name: "GitHub",
             },
             {
-              icon: "whatsapp",
-              url: "https://wa.me/5553984733103",
-              name: "WhatsApp",
+              icon: "dev",
+              url: "https://dev.to/adrianknapp",
+              name: "dev.to (Articles)",
             },
             {
               icon: "email",
               url: "mailto:adrknapp@gmail.com",
-              name: "E-mail",
+              name: "Send an e-mail",
             },
           ]}
         />
