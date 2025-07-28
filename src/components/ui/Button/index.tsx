@@ -5,17 +5,19 @@ import {
   LiaGithub,
   LiaWhatsapp,
 } from "react-icons/lia";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import { PiInstagramLogoFill } from "react-icons/pi";
+import { RiSendPlaneFill } from "react-icons/ri";
 
-import { TbMessagePlus } from "react-icons/tb";
 import { FaXTwitter } from "react-icons/fa6";
 
 const availableIcons = {
   twitter: <FaXTwitter className="w-4 h-4" />,
-  linkedin: <LiaLinkedin />,
-  instagram: <LiaInstagram />,
+  linkedin: <FaLinkedin />,
+  instagram: <PiInstagramLogoFill />,
   github: <LiaGithub />,
   whatsapp: <LiaWhatsapp />,
-  email: <TbMessagePlus />,
+  email: <RiSendPlaneFill />,
   dev: <DevIcon />,
 };
 
