@@ -2,6 +2,9 @@ import Profile from "@/components/common/Profile";
 import SocialLinks from "@/components/common/SocialLinks";
 import Link from "next/link";
 
+export const SUBTITLE =
+  "Creating solutions that combine performance, scalability, and simplicity.";
+
 const Home = () => {
   return (
     <div className="flex flex-col gap-4">
@@ -19,8 +22,7 @@ const Home = () => {
       />
       <div className="flex flex-col gap-8">
         <p className="text-base text-black-default text-center font-light">
-          For over six years, creating solutions that combine performance,
-          scalability, and simplicity.
+          {SUBTITLE}
         </p>
         <SocialLinks
           links={[

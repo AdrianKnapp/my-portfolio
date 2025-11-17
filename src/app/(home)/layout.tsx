@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
+import { SUBTITLE } from "./page";
 
 export const metadata: Metadata = {
   title: "Find Me | Adrian Knapp",
-  description:
-    "With over 6 years of experience in software development, I create solutions that combine performance, scalability, and simplicity.",
+  description: SUBTITLE,
 };
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
