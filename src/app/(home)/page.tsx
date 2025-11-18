@@ -1,9 +1,7 @@
 import Profile from "@/components/common/Profile";
 import SocialLinks from "@/components/common/SocialLinks";
 import Link from "next/link";
-
-export const SUBTITLE =
-  "Creating solutions that combine performance, scalability, and simplicity.";
+import { subtitle } from "./copy";
 
 const Home = () => {
   return (
@@ -13,17 +11,19 @@ const Home = () => {
         name="Adrian Knapp"
         description={
           <>
-            Senior Software Engineer at{" "}
+            {subtitle} Senior Software Engineer at{" "}
             <Link href="https://wellhub.com/" target="_blank">
-              Wellhub (Gympass)
-            </Link>
+              Wellhub (formerly Gympass)
+            </Link>{" "}
+            by day, building{" "}
+            <Link href="https://myfitplan.ai" target="_blank">
+              myfitplan.ai
+            </Link>{" "}
+            by night.
           </>
         }
       />
       <div className="flex flex-col gap-8">
-        <p className="text-base text-black-default text-center font-light">
-          {SUBTITLE}
-        </p>
         <SocialLinks
           links={[
             {

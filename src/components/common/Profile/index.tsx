@@ -10,7 +10,7 @@ const Profile = ({ imageUrl, name, description }: ProfileProps) => {
   return (
     <div data-cid="profile">
       <div className="profile-image">
-        <Image src={imageUrl} alt="Adrian Knapp" width={200} height={200} />
+        <Image src={imageUrl} alt="Adrian Knapp" width={400} height={400} />
       </div>
       <div className="flex gap-1 flex-col items-center">
         <h1 className="profile-name">{name}</h1>

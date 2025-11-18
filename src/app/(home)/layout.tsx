@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { SUBTITLE } from "./page";
+import { subtitle } from "./copy";
 
 export const metadata: Metadata = {
-  title: "Find Me | Adrian Knapp",
-  description: SUBTITLE,
+  title: "Adrian Knapp | Software Engineer",
+  description: subtitle,
 };
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
