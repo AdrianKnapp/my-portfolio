@@ -5,7 +5,7 @@ import { subtitle } from "./copy";
 
 const Home = () => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-8">
       <Profile
         imageUrl="https://avatars.githubusercontent.com/u/71047946?v=4"
         name="Adrian Knapp"
