@@ -16,7 +16,9 @@
   }
 
   &-description {
-    @apply text-sm text-black-light text-center font-light;
+    @apply text-sm text-center text-black-light font-light;
+
+    text-wrap: pretty;
 
     a {
       @apply underline;
