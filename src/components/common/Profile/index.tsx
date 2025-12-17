@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Link from "next/link";
-import { RoughNotation } from "react-rough-notation";
 
 type ProfileProps = {
   imageUrl: string;
   name: string;
 };
+
+// https://gooey-react.netlify.app/
 
 const Profile = ({ imageUrl, name }: ProfileProps) => {
   return (
@@ -22,30 +22,14 @@ const Profile = ({ imageUrl, name }: ProfileProps) => {
       <div className="flex gap-1 flex-col items-center">
         <h1 className="text-lg font-semibold text-black-dark">{name}</h1>
         <p className="text-sm text-center text-black-light font-light">
-          Senior Software Engineer at{" "}
-          <Link href="https://wellhub.com/" target="_blank" className="underline">
-            Wellhub (Gympass)
-          </Link>{" "}
-          by day,{" "}
-          <RoughNotation
-            type="underline"
-            strokeWidth={1}
-            show
-            multiline
-            color="#10b981"
-            animationDelay={1000}
-            animationDuration={1000}
-          >
-            building{" "}
-            <Link
-              href="https://myfitplan.ai"
-              className="inline underline"
-              target="_blank"
-            >
-              <span>myfitplan.ai</span>
-            </Link>{" "}
-            by night.
-          </RoughNotation>
+          I&apos;ve been coding since I was 12, and by 17, I had already landed
+          a senior developer role at a global company. Over the years, I&apos;ve
+          shipped products across different industries, audiences, and
+          challenges: from luxury fashion at Giorgio Armani to Tractian, one of
+          the fastest-growing AI startups in industrial tech. Today, I&apos;m a
+          Senior Software Engineer at Wellhub, the world&apos;s leading
+          corporate wellbeing platform. My passion lies in identifying real pain
+          points and architecting solutions that break the mold.
         </p>
       </div>
     </div>
