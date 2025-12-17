@@ -17,7 +17,7 @@ export default function RootLayout({
       <head>
         <GTMInjection />
       </head>
-      <body className={poppins.className}>
+      <body className={`${poppins.className} bg-black-lightest`}>
         <noscript>
           <iframe
             className="hidden"

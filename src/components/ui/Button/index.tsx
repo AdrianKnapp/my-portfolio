@@ -28,8 +28,12 @@ export type ButtonProps = {
 
 const Button = ({ children, icon }: ButtonProps) => {
   return (
-    <button className="button">
-      {icon ? <div className="button-icon">{availableIcons[icon]}</div> : null}
+    <button className="flex justify-center text-sm items-center w-full px-6 py-3 rounded-md text-black-dark bg-white hover:bg-black-dark hover:text-white duration-default">
+      {icon ? (
+        <div className="w-5 h-5 mr-2 [&>svg]:w-full [&>svg]:h-full">
+          {availableIcons[icon]}
+        </div>
+      ) : null}
       {children}
     </button>
   );
