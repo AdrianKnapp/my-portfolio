@@ -1,8 +1,7 @@
-import { GTMInjection } from "@/components/common/GTMInjection";
 import "../styles/globals.scss";
-import { Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 
-const poppins = Poppins({
+const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
@@ -14,11 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <head>
-        <GTMInjection />
-      </head>
-      <body className={`${poppins.className} bg-stone-200`}>
-        <noscript>
+      <head>{/* <GTMInjection /> */}</head>
+      <body className={`${inter.className} bg-stone-200`}>
+        {/* <noscript>
           <iframe
             className="hidden"
             title="gtm"
@@ -26,7 +23,7 @@ export default function RootLayout({
             src="https://www.googletagmanager.com/ns.html?id=GTM-WZ9CXZN5"
             width="0"
           />
-        </noscript>
+        </noscript> */}
         {children}
       </body>
     </html>

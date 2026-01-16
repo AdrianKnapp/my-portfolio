@@ -1,6 +1,4 @@
 import SocialLinks from "@/components/common/SocialLinks";
-import Image from "next/image";
-import { RoughNotation } from "react-rough-notation";
 
 const Home = () => {
   return (
