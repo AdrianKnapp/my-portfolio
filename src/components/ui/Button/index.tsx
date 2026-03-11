@@ -28,9 +28,9 @@ export type ButtonProps = {
 
 const Button = ({ children, icon }: ButtonProps) => {
   return (
-    <button className="flex items-center text-xs bg-white/60 backdrop-blur-sm px-3 py-1.5 rounded-full text-stone-600 hover:bg-stone-700 hover:text-white duration-default border border-stone-300/50">
+    <button className="flex items-center text-sm bg-white/60 backdrop-blur-sm px-3 py-1.5 rounded-full text-stone-600 hover:bg-stone-700 hover:text-white duration-default border border-stone-300/50">
       {icon ? (
-        <div className="w-3.5 h-3.5 mr-1.5 [&>svg]:w-full [&>svg]:h-full">
+        <div className="w-4 h-4 mr-1.5 [&>svg]:w-full [&>svg]:h-full">
           {availableIcons[icon]}
         </div>
       ) : null}

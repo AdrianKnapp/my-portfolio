@@ -18,25 +18,49 @@ const Home = () => {
           />
         </div> */}
         <div className="flex gap-2 flex-col">
-          <p className="text-xs font-semibold text-stone-700">WHO AM I</p>
-          <p className="font-light text-sm text-stone-600">
+          <p className="text-sm font-semibold text-stone-700">WHO AM I</p>
+          <p className="font-light leading-relaxed text-stone-600">
             I&apos;m Adrian Knapp, and I&apos;ve been coding since I was 12, and
             by 17, I had already landed a senior developer role at a global
             company. Over the years, I&apos;ve shipped products across different
-            industries, audiences, and challenges: from luxury fashion at
-            Giorgio Armani to Tractian, one of the fastest-growing AI startups
-            in industrial tech.{" "}
+            industries, audiences, and challenges: from luxury fashion at{" "}
+            <a
+              href="https://www.armani.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              Giorgio Armani
+            </a>{" "}
+            to{" "}
+            <a
+              href="https://tractian.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              Tractian
+            </a>
+            , one of the fastest-growing AI startups in industrial tech.{" "}
             <span className="font-medium">
-              Today, I&apos;m a Senior Software Engineer at Wellhub, the
-              world&apos;s leading corporate wellbeing platform.
+              Today, I&apos;m a Senior Software Engineer at{" "}
+              <a
+                href="https://wellhub.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                Wellhub
+              </a>
+              , the world&apos;s leading corporate wellbeing platform.
             </span>{" "}
             My passion lies in identifying real pain points and architecting
             solutions that break the mold.
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-2">
-        <p className="text-xs font-semibold text-stone-700">PROJECTS</p>
+      <div className="flex flex-col gap-3">
+        <p className="text-sm font-semibold text-stone-700">PROJECTS</p>
         <div className="flex flex-col gap-3">
           <div className="flex gap-3 items-start">
             <Link
@@ -57,19 +81,19 @@ const Home = () => {
                 <Link
                   href="https://myfitplan.ai"
                   target="_blank"
-                  className="text-sm font-medium text-stone-700 hover:text-stone-900 duration-default"
+                  className="font-medium text-stone-700 hover:text-stone-900 duration-default"
                 >
                   myfitplan
                 </Link>
                 <Link
                   href="https://myfitplan.ai"
                   target="_blank"
-                  className="text-xs text-stone-500 hover:text-stone-700 duration-default"
+                  className="text-sm text-stone-500 hover:text-stone-700 duration-default"
                 >
                   myfitplan.ai
                 </Link>
               </div>
-              <p className="font-light text-sm text-stone-500">
+              <p className="font-light text-stone-500">
                 AI-powered fitness platform that generates personalized workout
                 and nutrition plans tailored to your goals.
               </p>
@@ -94,19 +118,19 @@ const Home = () => {
                 <Link
                   href="https://kommento.com"
                   target="_blank"
-                  className="text-sm font-medium text-stone-700 hover:text-stone-900 duration-default"
+                  className="font-medium text-stone-700 hover:text-stone-900 duration-default"
                 >
                   Kommento
                 </Link>
                 <Link
                   href="https://kommento.com"
                   target="_blank"
-                  className="text-xs text-stone-500 hover:text-stone-700 duration-default"
+                  className="text-sm text-stone-500 hover:text-stone-700 duration-default"
                 >
                   kommento.com
                 </Link>
               </div>
-              <p className="font-light text-sm text-stone-500">
+              <p className="font-light text-stone-500">
                 Decision infrastructure for engineering teams. Collaborate on
                 RFCs, review decision records, and build a permanent, searchable
                 archive of every technical decision.
@@ -116,7 +140,7 @@ const Home = () => {
         </div>
       </div>
       <div className="flex flex-col gap-2">
-        <p className="text-xs font-semibold text-stone-700">FIND ME</p>
+        <p className="text-sm font-semibold text-stone-700">FIND ME</p>
         <SocialLinks
           links={[
             {
