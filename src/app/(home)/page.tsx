@@ -1,4 +1,8 @@
+import Image from "next/image";
+import Link from "next/link";
 import SocialLinks from "@/components/common/SocialLinks";
+import MyfitplanLogo from "@/assets/icons/myfitplan-logo.svg";
+import KommentoLogo from "@/assets/icons/k-logo-circle.svg";
 
 const Home = () => {
   return (
@@ -29,6 +33,56 @@ const Home = () => {
             My passion lies in identifying real pain points and architecting
             solutions that break the mold.
           </p>
+        </div>
+      </div>
+      <div className="flex flex-col gap-2">
+        <p className="text-xs font-semibold text-stone-700">PROJECTS</p>
+        <div className="flex flex-col gap-3">
+          <div className="flex gap-3 items-start">
+            <Image
+              src={MyfitplanLogo}
+              alt="myfitplan.ai logo"
+              width={32}
+              height={32}
+              className="rounded-full mt-0.5"
+            />
+            <div className="flex flex-col gap-1">
+              <Link
+                href="https://myfitplan.ai"
+                target="_blank"
+                className="text-sm font-medium text-stone-700 hover:text-stone-900 duration-default"
+              >
+                myfitplan.ai
+              </Link>
+              <p className="font-light text-sm text-stone-600">
+                AI-powered fitness platform that generates personalized workout
+                and nutrition plans tailored to your goals.
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-3 items-start">
+            <Image
+              src={KommentoLogo}
+              alt="kommento.com logo"
+              width={32}
+              height={32}
+              className="rounded-full mt-0.5"
+            />
+            <div className="flex flex-col gap-1">
+              <Link
+                href="https://kommento.com"
+                target="_blank"
+                className="text-sm font-medium text-stone-700 hover:text-stone-900 duration-default"
+              >
+                kommento.com
+              </Link>
+              <p className="font-light text-sm text-stone-600">
+                Decision infrastructure for engineering teams. Collaborate on
+                RFCs, review decision records, and build a permanent, searchable
+                archive of every technical decision.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="flex max-w-1/3 flex-col gap-2">
