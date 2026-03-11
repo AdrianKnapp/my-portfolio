@@ -39,44 +39,74 @@ const Home = () => {
         <p className="text-xs font-semibold text-stone-700">PROJECTS</p>
         <div className="flex flex-col gap-3">
           <div className="flex gap-3 items-start">
-            <Image
-              src={MyfitplanLogo}
-              alt="myfitplan.ai logo"
-              width={32}
-              height={32}
-              className="rounded-full mt-0.5"
-            />
-            <div className="flex flex-col gap-1">
-              <Link
-                href="https://myfitplan.ai"
-                target="_blank"
-                className="text-sm font-medium text-stone-700 hover:text-stone-900 duration-default"
-              >
-                myfitplan.ai
-              </Link>
-              <p className="font-light text-sm text-stone-600">
+            <Link
+              href="https://myfitplan.ai"
+              target="_blank"
+              className="shrink-0"
+            >
+              <Image
+                src={MyfitplanLogo}
+                alt="myfitplan.ai logo"
+                width={32}
+                height={32}
+                className="rounded-full mt-0.5"
+              />
+            </Link>
+            <div className="flex flex-col gap-1 flex-1">
+              <div className="flex items-center justify-between">
+                <Link
+                  href="https://myfitplan.ai"
+                  target="_blank"
+                  className="text-sm font-medium text-stone-700 hover:text-stone-900 duration-default"
+                >
+                  myfitplan
+                </Link>
+                <Link
+                  href="https://myfitplan.ai"
+                  target="_blank"
+                  className="text-xs text-stone-500 hover:text-stone-700 duration-default"
+                >
+                  myfitplan.ai
+                </Link>
+              </div>
+              <p className="font-light text-sm text-stone-500">
                 AI-powered fitness platform that generates personalized workout
                 and nutrition plans tailored to your goals.
               </p>
             </div>
           </div>
           <div className="flex gap-3 items-start">
-            <Image
-              src={KommentoLogo}
-              alt="kommento.com logo"
-              width={32}
-              height={32}
-              className="rounded-full mt-0.5"
-            />
-            <div className="flex flex-col gap-1">
-              <Link
-                href="https://kommento.com"
-                target="_blank"
-                className="text-sm font-medium text-stone-700 hover:text-stone-900 duration-default"
-              >
-                kommento.com
-              </Link>
-              <p className="font-light text-sm text-stone-600">
+            <Link
+              href="https://kommento.com"
+              target="_blank"
+              className="shrink-0"
+            >
+              <Image
+                src={KommentoLogo}
+                alt="kommento.com logo"
+                width={32}
+                height={32}
+                className="rounded-full mt-0.5"
+              />
+            </Link>
+            <div className="flex flex-col gap-1 flex-1">
+              <div className="flex items-center justify-between">
+                <Link
+                  href="https://kommento.com"
+                  target="_blank"
+                  className="text-sm font-medium text-stone-700 hover:text-stone-900 duration-default"
+                >
+                  Kommento
+                </Link>
+                <Link
+                  href="https://kommento.com"
+                  target="_blank"
+                  className="text-xs text-stone-500 hover:text-stone-700 duration-default"
+                >
+                  kommento.com
+                </Link>
+              </div>
+              <p className="font-light text-sm text-stone-500">
                 Decision infrastructure for engineering teams. Collaborate on
                 RFCs, review decision records, and build a permanent, searchable
                 archive of every technical decision.
@@ -85,7 +115,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="flex max-w-1/3 flex-col gap-2">
+      <div className="flex flex-col gap-2">
         <p className="text-xs font-semibold text-stone-700">FIND ME</p>
         <SocialLinks
           links={[

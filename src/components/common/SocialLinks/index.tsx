@@ -11,7 +11,7 @@ type SocialLinksProps = {
 
 const SocialLinks = ({ links }: SocialLinksProps) => {
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-wrap gap-2">
       {links.map(({ icon, url, name }) => (
         <Link key={icon} href={url} target="_blank">
           <Button icon={icon}>{name}</Button>
